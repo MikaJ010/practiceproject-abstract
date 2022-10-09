@@ -32,14 +32,16 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* ------------------------------- 3. Layout --------------------------------------- */
 h1 {
     font-size: 4em;
     font-weight: 400;
 }
 
-
-
-/* ------------------------------- 3. Layout --------------------------------------- */
+h4 {
+    font-size: 1.5em;
+    padding-bottom: 8px;
+}
 
 /* --------------- 3.1 Reusables ----------------------- */
 .outer-container {
@@ -131,6 +133,38 @@ ul {
     border-radius: 5px;
     margin-top: 20px;
 }
-/* --------------- 4.2 Introduction ------------------- */
+/* --------------- 4.2 Main ------------------- */
+
+.main__article-container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 700px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    margin: 60px 0 60px 80px;
+}
+
+.main__article {
+    display: flex;
+    width: 45%;
+    height: 200px;
+    align-items: flex-start;
+    /*border: 1px solid red*/
+}
+
+.main__article-text p {
+    padding-bottom: 30px
+}
+
+.main__icon {
+    width: 70px;
+    margin-right: 20px;
+}
+
+.main__article a:hover {
+    color: var(--clr-purple)
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */

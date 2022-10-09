@@ -1,0 +1,170 @@
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --clr-lilac: #dadbf1;
+    --clr-purple: #4C5FD5;
+    --clr-black: #000000;
+    --clr-white: #fff;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+h1 {
+    font-size: 4em;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1.5em;
+    padding-bottom: 8px;
+}
+
+/* --------------- 3.1 Reusables ----------------------- */
+.outer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*padding: 0 10px;*/
+}
+
+.inner-container {
+    flex: 0 1 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+.header__navbar {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 120px;
+    padding: 0 100px;
+
+    font-size: 1.4em;
+}
+
+.header__navbar ul {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar__first-list {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.navbar__vertical-bar {
+    padding: 0 10px;
+}
+
+.navbar__button-one {
+    border: 1px solid var(--clr-white);
+    border-radius: 8px;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    font-size: 1.1em;
+    padding: 10px 15px;
+    letter-spacing: 2px;
+}
+
+.navbar__button-two {
+    background-color: var(--clr-purple);
+    color: var(--clr-white);
+    border-radius: 8px;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    box-shadow: none;
+    border: none;
+    margin-left: 20px;
+    letter-spacing: 2px;
+}
+
+.header__hero {
+    background-color: var(--clr-lilac);
+    width: 100%;
+    padding: 100px 0;
+}
+
+#header__search {
+    width: 700px;
+    padding: 15px 0 15px 20px ;
+    font-size: 2em;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+/* --------------- 4.2 Main ------------------- */
+
+.main__article-container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 700px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    margin: 60px 0 60px 80px;
+}
+
+.main__article {
+    display: flex;
+    width: 45%;
+    height: 200px;
+    align-items: flex-start;
+    /*border: 1px solid red*/
+}
+
+.main__article-text p {
+    padding-bottom: 30px
+}
+
+.main__icon {
+    width: 70px;
+    margin-right: 20px;
+}
+
+.main__article a:hover {
+    color: var(--clr-purple)
+}
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
